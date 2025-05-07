@@ -27,3 +27,7 @@ python -m venv deep_fakes_venv
 source deep_fakes_venv/bin/activate
 pip install -r requirements.txt
 ```
+
+## Reflex app
+
+This project has also a Reflex app implementation. This can be found in a separate repository [here](https://github.com/anettehabanen/Change_My_Vote.git).
