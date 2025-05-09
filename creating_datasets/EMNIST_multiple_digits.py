@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 
-def extract_mnist(data_dir):
+def extract_mnist():
 
     # Loading in emnist (train
     images_train, labels_train = tfds.as_numpy(tfds.load(
@@ -61,7 +61,7 @@ def bounding_box (image, xstart, ystart):
 
 def generator(config):
     # extract mnist images and labels
-    image, label = extract_mnist(config.mnist_path)
+    image, label = extract_mnist()
     h, w = image.shape[1:3]
 
     # split: train, val, test
@@ -167,9 +167,7 @@ def argparser():
     def str2bool(v):
         return v.lower() == 'true'
 
-    parser = argparse.ArgumentParser(
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--mnist_path', type=str, default='./datasets/mnist/', help='path to *.gz files')
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--multimnist_path', type=str, default='./datasets/multimnist')
     parser.add_argument('--num_digit', type=int, default=3)
     parser.add_argument('--train_val_test_ratio', type=int, nargs='+', default=[64, 16, 20], help='percentage')
