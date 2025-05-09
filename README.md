@@ -1,6 +1,6 @@
-# Deep_Fakes_for_Paper_Vote_Privacy_Defence
+# Deepfakes_for_Paper_Vote_Privacy_Defence
 
-This is the repository for my master thesis called "Deep Fakes for Paper Vote Privacy Defence".
+This is the repository for my master thesis called "Deepfakes for Paper Vote Privacy Defence".
 
 ## Contents of the repository
 
@@ -17,14 +17,14 @@ Because Github has a file size limit, then the collected dataset of voting ballo
 
 First clone the repository:
 ```
-git clone https://github.com/anettehabanen/Deep_Fakes_for_Paper_Vote_Privacy_Defence
-cd Deep_Fakes_for_Paper_Vote_Privacy_Defence
+git clone https://github.com/anettehabanen/Deepfakes_for_Paper_Vote_Privacy_Defence.git
+cd Deepfakes_for_Paper_Vote_Privacy_Defence
 ```
 
 Then create an environment and install requirements:
 ```
-python -m venv deep_fakes_venv
-source deep_fakes_venv/bin/activate
+python -m venv deepfakes_venv
+source deepfakes_venv/bin/activate
 pip install -r requirements.txt
 ```
 
