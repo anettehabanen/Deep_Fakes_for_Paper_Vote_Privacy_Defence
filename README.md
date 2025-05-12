@@ -28,6 +28,12 @@ source deepfakes_venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Most of my files are Jupyter Notebook files. To run these:
+```
+pip install jupyterlab
+jupyter lab
+```
+
 ## Reflex app
 
 This project has also a Reflex app implementation. This can be found in a separate repository [here](https://github.com/anettehabanen/Change_My_Vote.git).
