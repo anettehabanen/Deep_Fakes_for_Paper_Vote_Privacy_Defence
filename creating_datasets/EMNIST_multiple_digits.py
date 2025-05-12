@@ -1,3 +1,8 @@
+
+# NB! This code is from this Github repository: https://github.com/shaohua0116/MultiDigitMNIST/tree/master
+# I changed the EMNIST Digits import, changed the colors of the digits and added finding bounding boxes.
+
+
 import subprocess
 import os
 import os.path as osp
